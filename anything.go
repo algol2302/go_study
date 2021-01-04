@@ -4,7 +4,9 @@ import "fmt"
 
 func main() {
 	// 1
-	fmt.Println("Hello")
+	n, err := fmt.Println("Hello")
+	fmt.Println(n)
+	fmt.Println(err)
 
 	// 2
 	foo()
@@ -17,7 +19,6 @@ func main() {
 		if i%2 == 0 {
 			fmt.Println(i)
 		}
-
 	}
 
 	bar()
