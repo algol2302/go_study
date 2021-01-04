@@ -31,6 +31,10 @@ _testmain.go
 .idea/workspace.xml
 **/.idea/workspace.xml
 
+# Directory-based project format:
+.vscode/
+**/.vscode/
+
 # mac hidden files
 .DS_Store
 
@@ -54,3 +58,4 @@ builds/**/images/*
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
