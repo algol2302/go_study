@@ -11,4 +11,10 @@ func main() {
 
 	y := x + 24
 	fmt.Println(y)
+
+	someText := "Some text"
+	anotherText := "Another text"
+
+	sumText := someText + " " + anotherText
+	fmt.Println(sumText)
 }
