@@ -1,1 +1,1 @@
-# go_study
+# go study on Udemy course
