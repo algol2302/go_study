@@ -1,22 +1,23 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
-
-func pow2() func() int {
-	iterator := 0
-	return func() int {
-		iterator++
-		return int(math.Pow(2, float64(iterator)))
-	}
-}
+import "fmt"
 
 func main() {
-	x := pow2()
-	fmt.Println(x())
-	fmt.Println(x())
-	fmt.Println(x())
-	fmt.Println(x())
+	a := 42
+	fmt.Println(a)
+	fmt.Println(&a)
+
+	fmt.Printf("%T\n", a)
+	fmt.Printf("%T\n", &a)
+
+	b := &a
+	fmt.Println(b)
+	fmt.Println(*b)
+	fmt.Println(*&a)
+
+	a++
+	fmt.Println(*b)
+
+	*b = 1
+	fmt.Println(a)
 }
