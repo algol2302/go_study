@@ -24,12 +24,14 @@ func (us users) String() {
 	}
 }
 
+// SortByAge is users alias for sorting
 type SortByAge []user
 
 func (a SortByAge) Len() int           { return len(a) }
 func (a SortByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a SortByAge) Less(i, j int) bool { return a[i].Age < a[j].Age }
 
+// SortByLastname is users alias for sorting
 type SortByLastname []user
 
 func (a SortByLastname) Len() int           { return len(a) }
