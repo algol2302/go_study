@@ -14,12 +14,14 @@ func (p person) String() string {
 	return fmt.Sprintf("%s: %d", p.first, p.age)
 }
 
+// ByAge is helper struct
 type ByAge []person
 
 func (a ByAge) Len() int           { return len(a) }
 func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
 func (a ByAge) Less(i, j int) bool { return a[i].age < a[j].age }
 
+// ByName is helper struct
 type ByName []person
 
 func (a ByName) Len() int           { return len(a) }
